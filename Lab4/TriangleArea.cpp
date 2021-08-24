@@ -8,7 +8,7 @@ int main() {
 	s = (a + b + c) / 2;
 	Area = sqrt(s * (s - a) * (s - b) * (s - c));
 	printf("Area : ");
-	if (b + c > a || a + c > b || a + b > c) {
+	if (b + c > a && a + c > b && a + b > c) { //Fix bug at this line.
 		printf("%lf", Area);
 	}
 	else {
